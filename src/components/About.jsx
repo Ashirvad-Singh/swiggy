@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const About=()=>{
@@ -9,4 +10,10 @@ const About=()=>{
         </div>
     )
 }
+=======
+function About() {
+  return <h1>About Page</h1>;
+}
+
+>>>>>>> ed60e36 (real swiggy api added)
 export default About;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const Contact=()=>{
     return (
@@ -14,5 +15,10 @@ const Contact=()=>{
         </div>
     );
 };
+=======
+function Contact() {
+  return <h1>Contact Page</h1>;
+}
+>>>>>>> ed60e36 (real swiggy api added)
 
 export default Contact;

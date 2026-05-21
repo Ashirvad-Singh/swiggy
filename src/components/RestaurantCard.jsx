@@ -7,6 +7,7 @@ function RestaurantCard({ resData }) {
     avgRating,
     sla,
     cloudinaryImageId,
+    aggregatedDiscountInfoV3,
     costForTwo,
     areaName,
   } = resData;
@@ -26,6 +27,7 @@ function RestaurantCard({ resData }) {
         <h4>⭐ {avgRating}</h4>
         <h4>{sla.deliveryTime} mins</h4>
         <h4>{costForTwo}</h4>
+        <h4>{aggregatedDiscountInfoV3?.header}</h4>
         <h4>{areaName}</h4>
       </div>
     </div>

@@ -6,10 +6,6 @@ import './App.css'
 import Header from './components/Header'
 import RestaurantCard from './components/RestaurantCard'
 import Body from './components/Body'
-import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom'
-import About from './components/About'
-import Contact from './components/Contact'
-import Error from './components/Error'
 
 /**
  * Header
@@ -26,51 +22,18 @@ import Error from './components/Error'
  *  -Contact
  */
 
-
-
-
-
-
 const AppLayout = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <Header />
-      
-      <Outlet />
-
+      <Body />
     </div>
   )
 }
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout />,
-    children: [
-      {
- path: "/",
-    element: <Body />,
-      },
-       {
-   path: "/about",
-    element: <About />
-  },
-  {
-    path: "/contact",
-    element: <Contact />
-  }
-    ],
-    errorElement: <Error />
-  },
- 
-])
 function App() {
   return (
-    <>
-    <RouterProvider router={appRouter} />
-    
-    </>
-    
+    <AppLayout />
   )
 }
 
-export default App
+export default App;

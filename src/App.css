@@ -59,7 +59,8 @@ body {
 ========================= */
 .filter-btn,
 .login-btn,
-.search-btn {
+.search-btn,
+.reset-btn {
   background-color: #ff6600;
   color: white;
 
@@ -92,7 +93,6 @@ body {
 /* =========================
    Search Section
 ========================= */
-
 
 .filter {
   display: flex;
@@ -200,12 +200,7 @@ body {
 
   border-radius: 12px;
 
-  background: linear-gradient(
-    90deg,
-    #eeeeee 25%,
-    #dddddd 50%,
-    #eeeeee 75%
-  );
+  background: linear-gradient(90deg, #eeeeee 25%, #dddddd 50%, #eeeeee 75%);
 
   background-size: 200% 100%;
 
